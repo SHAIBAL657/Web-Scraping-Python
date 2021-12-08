@@ -25,5 +25,10 @@
                         '''
     cursor = connection.cursor()
     cursor.execute(mysql_create_table)
+    
+### Restoring Database
+    CREATE DATABASE database_name;
+    exit
+    mysql -u username -p database_name < backup_name.sql
 
 ##### Run web-scrap-db.py
