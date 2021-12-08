@@ -12,7 +12,7 @@
 
 ### Create Databse
 
- mysql_create_table=CREATE TABLE Condo_House(
+    mysql_create_table=CREATE TABLE Condo_House(
                         Name varchar(250) NOT NULL,
                         Sleeps varchar(30),
                         Bedroom varchar(30),
@@ -22,7 +22,7 @@
                         Image3 varchar(500),
                         Price varchar(10),
                         PRIMARY KEY (Name,Sleeps,Bedroom,Bathroom))
-  cursor = connection.cursor()
-  cursor.execute(mysql_create_table)
+    cursor = connection.cursor()
+    cursor.execute(mysql_create_table)
 
 ##### Run web-scrap-db.py
