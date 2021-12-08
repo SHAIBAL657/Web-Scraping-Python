@@ -12,15 +12,17 @@
 
 ### Create Databse
 
-    CREATE TABLE Condo_House(
-        Name varchar(250) NOT NULL,
-        Sleeps varchar(30),
-        Bedroom varchar(30),
-        Bathroom varchar(30),
-        Image1 varchar(500),
-        Image2 varchar(500),
-        Image3 varchar(500),
-        Price varchar(10),
-        PRIMARY KEY (Name,Sleeps,Bedroom,Bathroom))
+ mysql_create_table=CREATE TABLE Condo_House(
+                        Name varchar(250) NOT NULL,
+                        Sleeps varchar(30),
+                        Bedroom varchar(30),
+                        Bathroom varchar(30),
+                        Image1 varchar(500),
+                        Image2 varchar(500),
+                        Image3 varchar(500),
+                        Price varchar(10),
+                        PRIMARY KEY (Name,Sleeps,Bedroom,Bathroom))
+  cursor = connection.cursor()
+  cursor.execute(mysql_create_table)
 
 ##### Run web-scrap-db.py
